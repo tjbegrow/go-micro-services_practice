@@ -1,2 +1,5 @@
 project/db-data/postgres/
 
+project/db-data/postgres/pg_stat_tmp/db_0.stat
+project/db-data/postgres/pg_stat_tmp/db_13757.stat
+project/db-data/postgres/pg_stat_tmp/db_0.stat
