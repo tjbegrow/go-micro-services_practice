@@ -16,7 +16,7 @@ services:
 
 
   front-end:
-    image: tjbegrow/front-end:1.0.1
+    image: tjbegrow/front-end:1.0.3
     deploy:
       mode: replicated
       replicas: 1
@@ -24,7 +24,7 @@ services:
       BROKER_URL: "http://backend"
 
   broker-service:
-    image: tjbegrow/broker-service:1.0.0
+    image: tjbegrow/broker-service:1.0.1
     # ports:
     #   - "8080:80"
     deploy:
