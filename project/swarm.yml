@@ -1,10 +1,17 @@
 version: '3'
 
 services:
+
+  front-end:
+    image: tjbegrow/front-end:1.0.0
+    deploy:
+      mode: replicated
+      replicas: 1
+
   broker-service:
     image: tjbegrow/broker-service:1.0.0
-    ports:
-      - "8080:80"
+    # ports:
+    #   - "8080:80"
     deploy:
       mode: replicated
       replicas: 1
@@ -83,6 +90,8 @@ services:
       POSTGRES_DB: users
     volumes:
       - ./db-data/postgres/:/var/lib/postgresql/data/
+  
+  
   
 
 
